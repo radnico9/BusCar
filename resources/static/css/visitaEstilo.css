@@ -1,0 +1,250 @@
+body{
+    font-family: 'Questrial', sans-serif;
+    background-color: #E3E4E3;
+}
+
+/*----------------------------------header-----------------------*/
+.logoNav{
+	height: 90px;
+	padding: 10px 30px ;
+	justify-content: center;
+	align-items: center;
+}
+.container{
+    max-width:  1400px;
+    margin: auto;
+}
+header{
+    background-color: rgb(245, 245, 245);
+    justify-content: center;
+    height: 200px;
+    box-shadow: 0px 1px 10px 0px #0531358e;
+}
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ul {
+	list-style: none;
+}
+.search {
+	position: relative;
+	padding: 10px;
+	top: 0px;
+}
+input {
+	display: flex;
+	align-items: center;
+	outline: none;
+	box-sizing: border-box;
+	height: 30px;
+	width: 0px;
+	padding: 0px;
+	color: #000;
+	border-radius: 50px;
+	font-size: 20px;
+	padding-left: 20px;
+	border: 1px solid #1f8fa0ae;
+	transition: all .7s ease;
+}
+::placeholder {
+	color: grey;
+}
+.btn {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 45px;
+	height: 45px;
+	background: #1f8fa0;
+	line-height: 40px;
+	border-radius: 50%;
+	text-align: center;
+	cursor: pointer;
+	transition: .5s;
+}
+.btn i {
+	font-size: 25px;
+	color: white;
+	line-height: 40px;
+	transition: all .7s ease;
+}
+.container:hover input {
+	width: 350px;
+}
+.container:hover i{
+	transform: rotate(-360deg);
+}
+
+.btn:hover{
+	background: #1f8fa0;
+}
+
+
+/* - - - - NAV - - - - */
+nav{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+	margin-right: 20px;
+}
+
+.nav1 li a{
+	color: black;
+    text-decoration: none;
+	padding: 10px 15px;
+	display: block;
+}
+
+.nav1 > li{
+	float: left;
+}
+
+nav li a:hover {
+	color: #109BA8;
+}
+
+.nav1 li ul{
+	display: none;
+}
+.nav1 li:hover > ul{
+	display: block;
+}
+
+#nav2{
+	position: absolute;
+	background-color: rgb(245, 245, 245);
+	border-radius: 8px;
+	box-shadow: 2px 4px 0px 0px #109BA8;
+	text-align: left;
+	padding-left: 0%;
+    padding-right: 5px;
+}
+
+ /* - - - - - ESCRITORIO - - - -- */
+@media (min-width: 720px){
+
+    header{
+        margin: auto;
+        width: 100%;
+        height: 100px;
+        background-color: rgb(245, 245, 245);
+    }
+    header .container{
+        display: flex;
+        flex-direction:row;
+        justify-content: space-between;
+    }
+	header .logo{
+        justify-content: center;
+	   align-items: center;
+    }
+	#nav2{
+	padding-left: 0%;
+    padding-right: 5px;
+	}
+
+}
+
+
+/*-------------------------------------------------------------*/
+.mensaje{
+    background-color:#0E8893;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    margin: 0px;
+}
+
+#link-contacto{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+#link-contacto:hover{
+    color: #000;
+}
+
+.mensaje p{
+    font-size: 18px;
+}
+
+.turno{
+    font-size: 18px;
+}
+
+.form-horario{
+    margin: 5px 20px 30px 10px;
+}
+.opciones-horario{
+    background-color: #E3E4E3;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+
+}
+.opcion-horario{
+    background-color: #E3E4E3;
+    font-size: 14px;
+}
+
+.form-contacto{
+    margin: 5px 20px 30px 10px;
+}
+
+.enviar{
+    padding: 10px 25px;
+    margin: 10px;        
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background: rgba(41, 105, 124, 0.904);
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;  
+}
+
+.enviar:hover{
+    background: rgb(0, 0, 0);
+    transform: scale(1.1);
+}
+
+.tableta{
+    display: flex;
+    justify-content: center;
+}
+.tabla-turno{
+    margin: auto;
+    border: 1px solid #000000;
+    margin: 20px 10px;
+    padding: 10px ;
+    border-collapse: collapse;
+}
+
+.tabla-turno th,td{
+    border: 2px solid;
+    padding: 10px 20px;        
+}
+
+.form-contacto{
+    background-color: #E3E4E3;        
+}
+
+/* - - - - -  FOOTER - - - -  */
+footer{
+    height: 140px;
+    background-color: black;
+}
+footer p{
+    color: rgb(245, 245, 245);
+}
+footer .container{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: flex-end;
+}
